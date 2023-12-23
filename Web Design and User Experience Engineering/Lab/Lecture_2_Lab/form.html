@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <header><h1>Form Elements</h1></header>
+    <form action="table.html" method="POST">
+        <!--Name-->
+        <label for="firstname">First Name</label>
+        <input id="firstname" name="firstname" type="text">
+        <label for="lastname">Last Name</label>
+        <input id="lastname" name="lastname" type="text"><br>
+
+        <!--Gender-->
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-male" name="gender" value="male">
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-female" name="gender" value="female"><br>
+
+        <select name="Fruits" id="fruit">
+            <option value="apple">Apple</option>
+            <option value="orange">Orange</option>
+        </select><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

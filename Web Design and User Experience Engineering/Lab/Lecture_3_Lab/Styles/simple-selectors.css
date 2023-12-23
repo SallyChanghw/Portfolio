@@ -1,0 +1,15 @@
+#blog-1{
+    color:blue;
+}
+
+.article-card{
+    color:green;
+}
+
+article{
+    text-align:center;
+}
+
+*{
+    padding:10px;
+}

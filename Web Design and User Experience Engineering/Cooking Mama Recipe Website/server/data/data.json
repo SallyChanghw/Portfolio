@@ -1,0 +1,27 @@
+[
+  {
+    "recipeId": "1",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+    "title": "Classic Spaghetti Carbonara",
+    "tags": ["Italian", "Pasta", "Quick Meal"],
+    "ingredients": ["Spaghetti", "Eggs", "Parmesan Cheese", "Garlic", "Bacon", "Black Pepper", "Salt"],
+    "description": "This is a classic recipe for Spaghetti Carbonara, featuring a rich and creamy sauce made with eggs and Parmesan cheese, combined with garlic and crispy bacon. It's a perfect quick and easy meal for any day of the week."
+  },
+  {
+    "recipeId": "2",
+    "image": "image_url_1.jpg",
+    "title": "Vegetarian Lasagna",
+    "tags": ["Vegetarian", "Italian", "Pasta"],
+    "ingredients": ["Lasagna noodles", "Ricotta cheese", "Spinach", "Tomato sauce", "Mozzarella cheese", "Parmesan cheese", "Garlic"],
+    "description": "A hearty vegetarian lasagna layered with rich ricotta, vibrant spinach, and flavorful tomato sauce, topped with melted mozzarella and Parmesan."
+  },
+  {
+    "recipeId": "3",
+    "image": "image_url_3.jpg",
+    "title": "Spicy Thai Noodles",
+    "tags": ["Thai", "Noodles", "Spicy"],
+    "ingredients": ["Rice noodles", "Red bell pepper", "Carrots", "Green onions", "Peanuts", "Cilantro", "Lime", "Soy sauce", "Sriracha"],
+    "description": "Spicy Thai noodles loaded with colorful vegetables and tossed in a savory and spicy sauce, garnished with crushed peanuts and fresh cilantro."
+  }
+]
+

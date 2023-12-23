@@ -1,0 +1,346 @@
+/* all */
+body{
+    @include test();
+}
+
+/* Nav bar*/
+.nav{
+    @include center-position();
+    @include position-nav($position4,$z-index1);
+    box-shadow:$size21 $size7 $size8 $shadow-color;
+    @include area($size14,$size13);
+    @include margin($size7,$size7,$size7,$size7);
+    @include padding($size7,$size7,$size7,$size7);
+    color:$text-color1;
+    font-weight: $font1;
+    background-color: $secondary-color;
+}
+
+.hotel-info{
+    @include padding($size7,$size5,$size7,$size5);
+}
+
+.topic{
+    display:$display1;
+}
+
+.nav a{
+    @include text-before($text-color1);
+    @include margin($size7,$size5,$size7,$size7);
+    @include padding($size4,$size7,$size4,$size7);
+}
+
+.nav a:hover{
+    color: $text-color1;
+    @include bottom-border($size21,$primary-color);
+}
+
+.nav .nav-icon{
+    @include margin($size7,$size8,$size7,$size8);
+}
+
+.logo-head{
+    @include margin($size7,$size15,$size7,$size16);    
+}
+
+
+/* Hotel info */
+.banner{
+    @include padding($size9,$size9,$size9,$size9);
+}
+
+.banner-header{
+    @include margin($size9,$size7,$size9,$size7);
+}
+
+.banner a{
+    @include text-before($text-color2);
+}
+
+.red-text{
+    color:$text-color2;
+}
+
+.banner-reviews{
+    @include center-position-1();
+}
+
+.banner-button{
+    margin-left:$size20;
+}
+
+.green-border{
+    @include margin($size7,$size8,$size7,$size7);
+    @include padding($size8,$size8,$size8,$size8);
+    @include box($primary-color);
+}
+
+.banner-icon{
+    float:$position2;
+    @include margin($size7,$size8,$size7,$size7);
+}
+
+.info{
+    @include margin($size7,$size7,$size5,$size7);
+}
+
+.price-pos{
+    float:$position2;
+}
+
+.price-size{
+    font-size:$size3;
+}
+
+.hotel-head{
+    @include font($size2,$font1);
+}
+
+.hotel-reviews{
+    @include center-position-1();
+}
+
+.book-button{
+    @include font($size1,$font1);
+    border:$size7;
+    @include padding($size1,$size5,$size1,$size5);
+    @include box1($primary-color,$radius1);
+    float: $position2;
+}
+
+.five-img{
+    display:$display2;
+    @include margin($size4,$size7,$size8,$size7);
+    @include grid2($grid-size1,$grid-size2,$grid-size2,$grid-size2);
+    grid-gap: $size8;
+    @include position-nav($position5,$z-index2);
+
+}
+
+.p1{
+    @include grid1($grid-row1,$grid-column1);
+    @include gridalign($span-space);
+    border-radius: $size21 $size7 $size7 $size21;
+}
+
+.p21{
+    @include grid1($grid-row2,$grid-column2);
+}
+
+.p22{
+    @include grid1($grid-row2,$grid-column3);
+    border-radius: $size7 $size21 $size7 $size7;
+}
+
+.p31{
+    @include grid1($grid-row3,$grid-column2);
+}
+
+.p32{
+    @include grid1($grid-row3,$grid-column3);
+    border-radius: $size7 $size7 $size21 $size7;
+}
+
+
+.photo_btn{
+    @include position-bottom($position6,$size1,$z-index2);
+    right:$size3;
+}
+
+hr{
+    border-color:$hr-color;
+    @include margin($size14,$size7,$size7,$size7);
+}
+
+
+/* Hotel Overview */
+.content{
+    @include padding($size7,$size9,$size7,$size9);
+    /* border-bottom: 2px;
+    box-shadow:5px 0px 10px #cccccc; */
+}
+
+.review_box{
+    @include center-position-1();
+    @include margin($size5,$size7,$size7,$size7);
+}
+
+.box1{
+    @include box1($primary-color,$radius1);
+    @include area($size10,$size17);
+    @include margin($size7,$size7,$size7,$size7);
+    @include padding($size8,$size8,$size8,$size8);
+}
+
+.box1 h2{
+    @include margin($size7,$size7,$size4,$size7);
+    font-size:$size5;
+}
+
+.box1 p{
+    @include margin($size7,$size7,$size8,$size7);
+}
+
+.box2{
+    @include box($primary-color);
+    @include area($size19,$size18);
+    @include margin($size7,$size7,$size7,$size8);
+    @include padding($size8,$size8,$size8,$size8);
+
+    /* border:1px solid #8dd3bb; */
+}
+
+.box2 .review_title{
+    margin-bottom: $size7;
+}
+
+
+/* Others */
+.content1{
+    @include padding($size9,$size9,$size7,$size9);
+}
+
+
+/* Hotel Available Rooms */
+.room{
+    @include bottom-border($size22,$forth-color);
+    @include margin($size7,$size7,$size8,$size7);
+    @include padding($size7,$size7,$size8,$size7);
+}
+
+.room-no{
+    border:$size7;
+}
+
+.room_desc{
+    @include center-position-1();
+}
+
+.room_desc p{
+    @include padding($size7,$size7,$size7,$size8);
+}
+
+.room_desc .price-right{
+    margin-left: $size20; /* text right */
+}
+
+.room_btn{
+    margin-left: $size4;
+}
+
+
+/* Amenitites */
+.amenity{
+    @include center-position-1();
+}
+
+.a_box{
+    @include margin($size7,$size12,$size7,$size7)
+}
+
+.a_box a{
+    @include text-before($text-color2);
+    @include font($size1,$font1);
+}
+
+
+/* Location */
+.location-title{
+    @include center-position-1();
+}
+
+.location-button{
+    margin-left: $size20;
+}
+
+
+/* Hotel Reviews */
+.review{
+    @include center-position-1();
+    @include bottom-border($size22,$forth-color);
+}
+
+.review-title{
+    @include center-position-1();
+}
+
+.review_score{
+    @include margin($size7,$size5,$size7,$size7);
+}
+
+.review1{
+    @include bottom-border($size22,$forth-color);
+}
+
+.review1 .flag_icon{
+    float:$position2;
+}
+
+.page{
+    text-align:$position1;
+    font-size:$size4;
+}
+
+
+/* Subscribe */
+.subscribe{
+    @include margin($size7,$size9,$size7,$size9);
+    @include padding($size5,$size9,$size5,$size9);
+    @include box1($third-color, $radius2);
+    @include position-bottom($position5,$size23,$z-index2);
+    z-index: 1;
+}
+
+.subscribe h1{
+    font-size: $size6;
+    margin-top: $size7;
+}
+
+.subscribe p{
+    font-size:$size4;
+    margin:$size21;
+}
+
+.subscribe img{
+    float:$position2;
+}
+
+.form{
+    margin-top:30px;
+    @include center-position-1();
+}
+
+.form input{
+    @include area($size5,$size11);
+    border-radius: $radius1;
+    @include padding($size8,$size8,$size8,$size8);
+    @include font1($size4,$size7);
+}
+
+.form button{
+    @include area($size9,$size10);
+    color: $secondary-color;
+    @include box1($text-color1,$radius1);
+    @include font1($size1,$size7);
+    margin-left: $size8;
+}
+
+/* footer */
+.footer{
+    background-color:$primary-color;
+    @include center-position;
+    @include padding($size10,$size9,$size4,$size9);
+}
+
+.logo-footer{
+    @include margin($size7,$size7,$size7,$size5);
+    margin-right: $size20;
+}
+
+.f1{
+    @include margin($size6,$size6,$size6,$size6);
+}
+
+.contact_info{
+    @include center-position-2();
+}

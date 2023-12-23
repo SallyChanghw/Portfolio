@@ -1,0 +1,22 @@
+.card-wrapper22 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // align-items: center; // Center content vertically
+}
+
+.card-title2 {
+    justify-content: center;
+    text-align: center;
+}
+
+.card-container2 {
+    padding:30px;
+    margin:30px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid $card-border-color;
+    border-radius: 15px;
+    // align-items: center;
+    justify-content: center;
+}

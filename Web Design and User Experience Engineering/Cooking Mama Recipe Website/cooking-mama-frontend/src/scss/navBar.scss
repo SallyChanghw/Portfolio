@@ -1,0 +1,25 @@
+.navBar-container {
+    height: 100px;
+    width: 100%;
+    background-color: $navbar-color;
+    border-bottom: 1px solid grey;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+
+    .navBar-title {
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 400;
+        color: $website-title;
+        font-family: 'kaushanScript';
+        margin-left: 30px;
+    }
+
+    .navBar-buttons {
+        margin-right: 30px;
+    }
+}

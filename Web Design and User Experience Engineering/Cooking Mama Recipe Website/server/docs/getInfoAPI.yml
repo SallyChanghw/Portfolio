@@ -1,0 +1,82 @@
+openapi: 3.1.0
+info:
+  title: Get user info API
+  description: REST API to get user info.
+  version: 'v1.0'
+servers:
+ - url: http://localhost:8080
+paths:
+  /userInfo:
+    get:
+      operationId: get-user-info
+      description: Get user info
+      parameters:
+        - name: userId
+          in: query
+          required: true
+          example: 1
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful get user info
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserInfo"
+components:
+  schemas:
+    UserInfo:
+      type: object
+      properties:
+        statusCode:
+          type: string
+        statusMsg:
+          type: string
+        userId:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        recipeList:
+          type: array
+          items: 
+            type: object
+            properties:
+              recipeId:
+                type: string
+              author:
+                type: string
+              title:
+                type: string
+              description:
+                type: string
+              tags:
+                type: array
+                items: 
+                  type: string
+              image:
+                type: string
+                format: byte
+                description: Base64 encoded image
+              ingredients:
+                type: array
+                items: 
+                  type: string
+            example:
+                statusCode: '200'
+                statusMsg: 'success'
+                userId: '1'
+                username: 'Josie89'
+                email: 'cherryfuh@gmail.com'
+                recipeList:
+                  recipeId: '1'
+                  image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDA...'
+                  title: Sumai
+                  tags: ['pork', 'side', 'Chinese']
+                  author: "JosieFu"
+                  ingredients: ['dashi', 'garlic', 'cilantro']
+                  description: "Prepare Filling / In a large bowl, combine ground pork, chopped shrimp, water chestnuts, soy sauce, oyster sauce, sesame oil, cornstarch, sugar, grated ginger, minced garlic, and chopped green onions. Mix well until all ingredients are evenly incorporated."

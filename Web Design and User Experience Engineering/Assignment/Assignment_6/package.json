@@ -1,0 +1,14 @@
+{
+  "name": "assignement_6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blog.js",
+  "scripts": {
+    "sass-dev": "npx sass scss/main.scss dist/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.4"
+  }
+}

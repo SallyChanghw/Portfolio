@@ -1,0 +1,15 @@
+[
+    {
+        "title":"First Post",
+        "author":"Sally",
+        "content":"This is my first post.",
+        "date":"10/23/2023, 7:39:37 PM"
+    },
+    {
+        "title":"Second Post",
+        "author":"Josie",
+        "content":"This is my second post.",
+        "date":"10/23/2023, 7:39:37 PM"
+
+    }
+]

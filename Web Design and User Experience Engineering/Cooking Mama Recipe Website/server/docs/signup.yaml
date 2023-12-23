@@ -1,0 +1,56 @@
+openapi: 3.1.0
+info:
+  title: Sign up
+  description: REST API to sign up a new user.
+  version: 'v1.0'
+servers:
+ - url: http://localhost:8080
+paths:
+  /signup:
+    post:
+      summary: Sign up a new user
+      requestBody:
+        description: sign up
+        required: true
+        content:
+          application/json: 
+            schema: 
+              $ref: '#/components/schemas/UserRequest'
+      responses:
+        "200":
+          description: request successfully sent
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/UserResponse"
+components:
+  schemas:
+    UserRequest:
+      type: object
+      properties:
+        username:
+          type: string
+          examples: 
+            - henryChen
+        email:
+          type: string
+          examples: 
+            - henrychener@gmail.com
+        password:
+          type: string
+          examples: 
+            - happy6150
+        
+    UserResponse:
+      type: object
+      properties:
+        statusCode:
+          type: string
+          examples:
+            - 200
+        statusMsg:
+          type: string
+          examples: 
+            - user successfully registered    
+        

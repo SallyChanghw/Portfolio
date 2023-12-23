@@ -1,0 +1,8 @@
+.box{
+    width:60vw;
+    height:40vh;
+    overflow:scroll;
+    border:1px solid rgba(231, 225,225,0.8);
+    margin:20px;
+    padding:10px;
+}

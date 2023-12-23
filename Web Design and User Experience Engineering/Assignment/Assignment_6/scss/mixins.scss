@@ -1,0 +1,74 @@
+@mixin main-content(){
+    margin:0px;
+    padding:0px;
+    font-family: 'Trade Gothic', sans-serif;
+}
+
+@mixin margin($b1,$b2,$b3,$b4){
+    margin:$b1 $b2 $b3 $b4;
+}
+
+@mixin padding($b1,$b2,$b3,$b4){
+    padding:$b1 $b2 $b3 $b4;
+}
+
+@mixin input1($h,$w,$radius,$border){
+    height: $h;
+    width: $w;
+    border-radius: $radius;
+    border: $border;
+}
+
+@mixin input2($font,$w,$radius,$border){
+    font-size:$font;
+    width: $w;
+    border-radius: $radius;
+    border: $border;
+}
+
+@mixin button1($h,$w,$color,$background,$radius,$size,$border){
+    height: $h;
+    width: $w;
+    color:$color;
+    background-color:$background;
+    border-radius: $radius;
+    font-size:$size;
+    border: $border;
+}
+
+@mixin font($color,$weight){
+    color:$color;
+    font-weight:$weight;
+}
+
+@mixin position1($display,$align){
+    display:$display;
+    align-items:$align;
+}
+
+@mixin position2($pos,$index){
+    position:$pos;
+    z-index: $index;
+}
+
+@mixin area($h,$w){
+    height:$h;
+    width: $w;
+}
+
+@mixin br($background,$radius){
+    background-color:$background;
+    border-radius: $radius;
+}
+
+@mixin border1($px,$color){
+    border:$px solid $color;
+}
+
+@mixin border2($px,$color){
+    border-bottom:$px solid $color;
+}
+
+@mixin box-shadow($px,$px1,$px2,$color){
+    box-shadow: $px $px1 $px2 $color;
+}

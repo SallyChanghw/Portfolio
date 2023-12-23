@@ -1,0 +1,168 @@
+  /* all */
+  body {
+    @include main-content();
+  }
+
+  /* Nav bar*/
+  .nav {
+    @include position1($display1,$position1);
+    @include position2($position3,$z-index1);
+    @include area($size14,$big);
+    @include box-shadow($size6,$size1,$size2,$shadow-color);
+    @include margin($size1,$size1,$size1,$size1);
+    @include padding($size1,$size5,$size1,$size5);
+    @include font($color1,$font1);
+    background-color: $fourth-color;
+  }
+  
+  .nav a {
+    text-decoration: $no;
+    color: $color1;
+    @include padding($size3,$size2,$size3,$size2);
+  }
+  
+  .nav a:hover {
+    color: $color1;
+    @include border2($size6,$primary-color);
+  }
+  
+  .nav .nav-icon {
+    @include margin($size1,$size2,$size1,$size2);
+  }
+  
+  .banner {
+    @include padding($size4,$size5,$size4,$size5);
+  }
+  
+  .banner-header {
+    @include margin($size5,$size1,$size5,$size1);
+  }
+  
+  .blue-text {
+    color: $primary-color;
+  }
+  
+  .title {
+    font-size: $size15;
+    font-weight: $font1;
+  }
+  
+
+  /* Create */
+  .create {
+    @include padding($size1,$size5,$size4,$size5);
+    @include margin($size4,$size1,$size1,$size1);
+    @include position2($position4,$z-index2);
+    @include br($secondary-color,$size2);
+    height:$big;
+  }
+
+  .create h1 {
+    font-size: $size8;
+    margin-top: $size1;
+  }
+
+  .create p {
+    font-size: $size3;
+    margin: $size6;
+  }
+
+  .create img {
+    float: $position2;
+  }
+  
+  .form {
+    margin-top: $size4;
+  }
+  
+  .form input{
+    @include input1($size4,$size11,$radius1,$size1);
+    @include margin($size2,$size2,$size2,$size2);
+    @include padding($size2,$size2,$size2,$size2); 
+    font-size: $size3;
+  }
+
+  .form textarea{
+    @include input2($size3,$size11,$radius1,$size1);
+    @include margin($size2,$size2,$size2,$size2);
+    @include padding($size2,$size2,$size2,$size2); 
+  }
+
+  .form button {
+    @include button1($size5,$size10,$color2,$color1,$radius1,$size9,$size1);
+    @include margin($size2,$size2,$size2,$size2);
+  }
+  
+  .create img{
+    position: $position5;
+    right:$size12;
+    top:$size12;
+  }
+
+
+    /* All Post */
+  .postPage{
+    @include position1($display1,$position1);
+    @include margin($size1,$size5,$size5,$size5);
+    overflow: $auto;
+    width:$auto;
+    flex-wrap: $wrap;
+  }
+
+  .new{
+    @include margin($size1,$size2,$size2,$size1);
+    @include padding($size9,$size9,$size9,$size9); 
+    @include area($size13,$size13);
+    @include br($primary-color,$size2);
+    color:$color2;
+    overflow: $auto;
+    word-wrap: $word-wrap;
+  }
+
+  .new button{
+    @include button1($size8,$size10,$color2,$color1,$radius1,$size9,$size1);
+    @include margin($size2,$size2,$size3,$size1);
+  }
+
+  .Popup{
+    justify-content:$position1;
+    background-color:$third-color;
+    @include position1($display1,$position1);
+    @include position2($position3,$z-index2);
+    @include area($big,$big);
+    top: $size0;
+    left: $size0;
+  }
+
+  .Popup input{
+    @include input1($size4,$size7,$radius1,$size1);
+    @include margin($size2,$size1,$size3,$size1);
+    @include padding($size6,$size6,$size6,$size6); 
+  }
+
+  .Popup textarea{
+    @include input1($size5,$size7,$radius1,$size1);
+    @include margin($size2,$size1,$size3,$size1);
+    @include padding($size6,$size6,$size6,$size6);
+  }
+
+
+   /* Popup */
+  .Edit{
+    color:$color2;
+    text-align: $position1;
+    @include area($size13,$size13);
+    @include position2($position5,$z-index3);
+    @include padding($size3,$size3,$size3,$size3);
+    @include br($primary-color,$size2);
+    @include border1($size16,$color2);
+  }
+
+  .Edit button{
+    @include button1($size8,$size10,$color2,$color1,$radius1,$size9,$size1);
+    @include margin($size2,$size2,$size1,$size1);
+  }
+  
+  h2{
+    @include margin($size2,$size1,$size3,$size1);
+  }

@@ -1,0 +1,169 @@
+openapi: 3.1.0
+info:
+  title: homepage api
+  description: all operations on  homepage
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:8080'
+paths:
+  /homepage:
+    get:
+      operationId: load-homepage
+      description: load all exist recipes
+      responses:
+        '200':
+          description: Successful search
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/recipeList'
+
+  /recipeInfo:
+    get:
+      operationId: load-recipe
+      description: load recipe by recipeId/ show recipe details
+      parameters:
+        - name: recipeId
+          in: query
+          required: true
+          example: 1
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful search
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/recipeList'
+
+  /search_receipes:
+    get:
+      operationId: search-recipe
+      description: search recipe
+      parameters:
+        - name: searchBy
+          in: query
+          required: true
+          example: author
+          schema:
+            type: string
+        - name: keyWords
+          in: query
+          required: true
+          example: Zijian Feng
+          schema:
+              type: string
+      responses:
+        '200':
+          description: Successful search
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/recipeList'
+
+  /addfav:
+    put:
+        operationId: add-fav
+        description: add recipe to user's favorite list
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  userId:
+                    type: string
+                    description: Unique identifier of the user
+                  recipeId:
+                    type: string
+                    description: Unique identifier of the recipe to be added to favorites
+        responses:
+          '200':
+            description: Successfully added the recipe to favorites
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/successResponse'
+  /deletefav:
+    put:
+      operationId: delete-fav
+      description: delete recipe to user's favorite list
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                  description: Unique identifier of the user
+                recipeId:
+                  type: string
+                  description: Unique identifier of the recipe to be deleted from favorites
+      responses:
+        '200':
+          description: Successfully deleted the recipe from favorites
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/successResponse'
+
+components:
+  schemas:
+    recipeList:
+      type: object
+      properties:
+        statusCode:
+          type: string
+        statusMsg:
+          type: string
+        recipes:
+          type: array
+          items:
+              type: object
+              properties:
+                recipeId:
+                  type: string
+                image:
+                  type: string
+                  format: byte
+                  description: Base64 encoded image
+                title:
+                  type: string
+                tags:
+                  type: array
+                  items:
+                    type: string
+                author:
+                  type: string
+                ingredients:
+                  type: array
+                  items:
+                    type: string
+                description:
+                  type: string
+      example:
+        statusCode: '200'
+        statusMsg: 'success'
+        recipes:
+          - recipeId: '1'
+            image: 'base64'
+            title: 'test'
+            tags: ['test']
+            author: 'test'
+            ingredients: ['test']
+            description: 'test'
+
+    successResponse:
+      type: object
+      properties:
+        statusCode:
+          type: string
+        statusMsg:
+          type: string
+      example:
+        statusCode: '200'
+        statusMsg: 'success'

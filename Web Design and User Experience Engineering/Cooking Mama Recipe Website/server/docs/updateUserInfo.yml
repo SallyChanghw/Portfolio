@@ -1,0 +1,54 @@
+openapi: 3.1.0
+info:
+  title: Update user info API
+  description: REST API to update user info.
+  version: 'v1.0'
+servers:
+ - url: http://localhost:8080
+paths:
+  /userInfo:
+    put:
+      operationId: update-user-info
+      description: Update user info
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                  description: Unique identifier of the user
+      responses:
+        "200":
+          description: Successful update user info
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserUpdate"
+components:
+  schemas:
+    UserUpdate:
+      type: object
+      properties:
+        statusCode:
+          type: string
+        statusMsg:
+          type: string
+        userId:
+          type: string
+        username:
+          type: string
+        password:
+          type: string
+        email:
+          type: string
+          format: email
+      example:
+        statusCode: 200
+        statusMsg: user info successfully updated
+        userId: 1
+        username: josie89
+        password: josie0925
+        email: cherryfuh@gmail.com

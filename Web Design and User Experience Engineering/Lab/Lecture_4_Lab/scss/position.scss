@@ -1,0 +1,50 @@
+.container{
+    padding:20px;
+    width:50%;
+    margin:auto;
+    border-radius: 10px;
+    height:1200px;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    text-align:center;
+    background-color: rgba(49,164,4,0.2);
+    border-radius: 5px;
+}
+
+.container, .box{
+    @include border($border-color);
+    // border:1px solid $border-color;
+}
+
+.static{
+    position:static;
+}
+
+.relative{
+    position: relative;
+    top:20px;
+    left:20px;
+    background-color: rgba(49,164,4);
+    /* margin:20px; */
+}
+
+.absolute{
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+.fixed{
+    position:fixed;
+    top:20px;
+    left:200px;
+}
+
+.sticky{
+    position:sticky;
+    top:20px;
+    /* left:20px; */
+}

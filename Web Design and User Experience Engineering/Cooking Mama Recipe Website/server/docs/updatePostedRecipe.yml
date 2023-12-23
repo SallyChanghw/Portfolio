@@ -1,0 +1,76 @@
+openapi: 3.1.0
+info:
+  title: Update posted recipe API
+  description: REST API to update posted recipe.
+  version: 'v1.0'
+servers:
+ - url: http://localhost:8080
+paths:
+  /postedRecipe:
+    put:
+      operationId: update-posted-recipe
+      description: Update posted recipe
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                  description: Unique identifier of the user
+                recipeId:
+                  type: string
+                  description: Unique identifier of the recipe
+      responses:
+        "200":
+          description: Successful update poseted recipe
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostedRecipeUpdate"
+components:
+  schemas:
+    PostedRecipeUpdate:
+      type: object
+      properties:
+        statusCode:
+          type: string
+        statusMsg:
+          type: string
+        recipes:
+          type: object
+          properties:
+            recipeId:
+              type: string
+            image:
+              type: string
+              format: byte
+              description: Base64 encoded image
+            title:
+              type: string
+            tags:
+              type: array
+              items:
+                type: string
+            author:
+              type: string
+            ingredients:
+              type: array
+              items:
+                type: string
+            description:
+              type: string
+
+      example:
+              statusCode: '200'
+              statusMsg: 'success'
+              recipes:
+                recipeId: '1'
+                image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDA...'
+                title: Sumai
+                tags: ['pork', 'side', 'Chinese']
+                author: "JosieFu"
+                ingredients: ['dashi', 'garlic', 'cilantro']
+                description: -\\\"Prepare Filling / In a large bowl, combine ground pork, chopped shrimp, water chestnuts, soy sauce, oyster sauce, sesame oil, cornstarch, sugar, grated ginger, minced garlic, and chopped green onions. Mix well until all ingredients are evenly incorporated."

@@ -1,0 +1,25 @@
+article{
+    border: 1px solid #575555;
+    border-radius:5px;
+    padding:5px;
+    margin:10px;
+}
+
+article h2{
+    text-align:center;
+}
+
+article:hover{
+    background:#81c0e4;
+    cursor:pointer;
+}
+
+article > p::first-letter{
+    font-size:3em;
+    font-weight:bold;
+}
+
+p::selection{
+    /* background-color:#595555; */
+    background-color:rgba(103,98,98,1);
+}

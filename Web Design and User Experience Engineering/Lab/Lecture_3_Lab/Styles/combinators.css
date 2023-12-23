@@ -1,0 +1,21 @@
+section h2{
+    text-align:center;
+}
+
+
+section > .article-card{
+    border:1px solid black;
+
+}
+
+/* .box next*/
+.box + article{
+    color:green;
+
+}
+
+/* .box ~article end*/
+.box ~article{
+    font-weight:bold;
+
+}

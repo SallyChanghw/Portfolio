@@ -1,0 +1,311 @@
+/* all */
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Trade Gothic', sans-serif;
+}
+
+
+/* Nav bar*/
+.nav{
+    display:flex;
+    align-items: center; /* Align cross-axis center */
+    justify-content: center; /* Align the main axis in the center */
+    color:black;
+    font-weight: bold;
+    background-color: white;
+    box-shadow:5px 0px 10px rgba(225, 227, 226);
+    height:60px;
+    margin:0px;
+    padding:0px;
+}
+
+.topic{
+    display:flex;
+}
+
+.nav a{
+    text-decoration:none;
+    color:black;
+    padding: 20px 0px 20px 0px;
+    margin:0px 30px 0px 0px;
+}
+
+.nav a:hover{
+    color: black;
+    border-bottom:5px solid rgba(156, 209, 188);
+}
+
+.nav .nav-icon{
+    margin:0px 10px 0px 10px;
+}
+
+.logo-head{
+    margin:0px 130px 0px 100px;
+}
+
+
+/* Hotel info */
+.banner{
+    padding:50px;
+}
+
+.banner a{
+    text-decoration:none;
+    color:rgba(239, 140, 134);
+}
+
+.red-text{
+    color:rgba(239, 140, 134);
+}
+
+.green-border{
+    padding:10px;
+    margin:10px;
+    border:2px solid rgba(156, 209, 188);
+    border-radius: 5px;
+}
+
+.banner-icon{
+    float:right;
+    margin: 0px 10px 0px 0px;
+}
+
+.info{
+    margin:0px 0px 30px 0px;
+}
+
+.price-pos{
+    float:right;
+}
+
+.price-size{
+    font-size:25px;
+}
+
+.hotel-head{
+    font-size:32px;
+    font-weight: bold;
+}
+
+.hotel-reviews{
+    display: flex;
+    align-items: center;
+}
+
+.book-button{
+    font-weight: bold;
+    font-size:15px;
+    border:0px;
+    padding:15px 30px 15px 30px;
+    border-radius: 5px;
+    background-color:rgba(156, 209, 188);
+    float: right;
+}
+
+.five-img{
+    position:relative;
+    margin:50px 0px 10px 0px;
+}
+
+.photo_btn{
+    position:absolute;
+    bottom:15px;
+    right:25px;
+}
+
+hr{
+    border-color:rgba(225, 227, 226, 0.5);
+    margin:50px 0px 0px 0px;
+}
+
+
+/* Hotel Overview */
+.content{
+    padding:0px 50px 0px 50px;
+    /* border-bottom: 2px;
+    box-shadow:5px 0px 10px #cccccc; */
+}
+
+.review_box{
+    display: flex;
+    align-items: center; /* vertical center*/
+}
+
+.box1{
+    background-color:rgba(156, 209, 188);
+    border-radius: 5px;
+    width:120px;
+    height:100px;
+    padding:10px;
+    margin:0px;
+}
+
+.box1 h2{
+    margin:0px 0px 20px 0px;
+    font-size:30px;
+}
+
+.box1 p{
+    margin:0px 0px 10px 0px;
+}
+
+.box2{
+    border:2px solid rgba(156, 209, 188);
+    border-radius: 5px;
+    width:116px;
+    height:96px;
+    padding:10px;
+    margin:0px 0px 0px 10px;
+    /* border:1px solid #8dd3bb; */
+}
+
+.box2 .review_title{
+    margin-bottom: 0px;
+}
+
+
+/* Others */
+.content1{
+    padding:50px 50px 0px 50px;
+}
+
+
+/* Hotel Available Rooms */
+.room{
+    border-bottom:2px solid rgba(225, 225, 225, 0.5);
+    padding:0px 0px 10px 0px;
+    margin:0px 0px 10px 0px;
+}
+
+.room_desc{
+    display: flex;
+    align-items: center;
+}
+
+.room_desc p{
+    padding:0px 0px 0px 10px;
+}
+
+.room_desc .price-right{
+    margin-left: auto; /* text right */
+}
+
+.room_btn{
+    margin-left: 20px;
+}
+
+
+/* Amenitites */
+.amenity{
+    display: flex;
+    align-items: center; /* vertical center*/
+}
+
+.a_box{
+    margin:0px 400px 0px 0px;
+}
+
+.a_box a{
+    text-decoration: none;
+    color:rgba(239, 140, 134);
+    font-size:15px;
+    font-weight: bold;
+}
+
+
+/* Hotel Reviews */
+.review{
+    display: flex;
+    align-items: center; /* vertical center*/
+    border-bottom:2px solid rgba(225, 225, 225, 0.5);
+}
+
+.review_score{
+    margin: 0px 30px 0px 0px;
+}
+
+.review1{
+    border-bottom:2px solid rgba(225, 225, 225, 0.5);
+}
+
+.review1 .flag_icon{
+    float:right;
+}
+
+.page{
+    text-align:center;
+    font-size:20px;
+}
+
+
+/* Subscribe */
+.subscribe{
+    margin:100px 50px 20px 50px;
+    padding:30px 50px 30px 30px;
+    background-color:rgba(210, 233, 225);
+    border-radius: 10px;
+}
+
+.subscribe h1{
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+.subscribe p{
+    font-size:20px;
+    margin:5px;
+}
+
+.subscribe img{
+    float:right;
+
+}
+
+.form{
+    margin-top:30px;
+    display:flex;
+    align-items: center;
+}
+
+.form input{
+    width:500px;
+    height:30px;
+    border-radius: 5px;
+    border: 0px;
+    padding:10px;
+    font-size:20px;
+}
+
+.form button{
+    height:50px;
+    width:100px;
+    border: 0px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size:15px;
+}
+
+/* footer */
+.footer{
+    background-color:#8dd3bb;
+    display: flex;
+    align-items: center; /* vertical center */
+    justify-content:center;
+    padding:20px;
+}
+
+.logo-footer{
+    margin:0px 20px 0px 0px;
+}
+
+.f1{
+    margin:10px;
+}
+
+.contact_info{
+    display: flex;
+    justify-content:center;
+}

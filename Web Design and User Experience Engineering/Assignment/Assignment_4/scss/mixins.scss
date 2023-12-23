@@ -1,0 +1,98 @@
+// body
+@mixin test(){
+    margin:0px;
+    padding:0px;
+    font-family: 'Trade Gothic', sans-serif;
+}
+
+// content-align
+@mixin center-position() {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+@mixin center-position-1(){
+    display:flex;
+    align-items: center;
+}
+
+@mixin center-position-2(){
+    display:flex;
+    justify-content:center;
+}
+
+// hover
+@mixin text-before($color) {
+    text-decoration:none;
+    color:$color;
+}
+
+// review-box
+@mixin box($color){
+    border:2px solid $color;
+    border-radius: 5px;
+}
+
+@mixin box1($color,$radius){
+    background-color:$color;
+    border-radius: $radius;
+}
+
+// font
+@mixin font($size,$weight){
+    font-size:$size;
+    font-weight: $weight;
+}
+
+@mixin font1($size,$border){
+    font-size:$size;
+    border: $border;
+}
+
+// magin and padding
+@mixin margin($b1,$b2,$b3,$b4){
+    margin:$b1 $b2 $b3 $b4;
+}
+
+@mixin padding($b1,$b2,$b3,$b4){
+    padding:$b1 $b2 $b3 $b4;
+}
+
+// hieght and weight
+@mixin area($h1,$w1){
+    height:$h1;
+    width:$w1;
+}
+
+// border
+@mixin bottom-border($px,$color){
+    border-bottom:$px solid $color;
+}
+
+//subscribe and footer
+@mixin position-bottom($po,$bo,$index){
+    position:$po;
+    bottom:$bo;
+    z-index:$index;
+}
+
+// grid
+@mixin grid1($row, $column){
+    grid-row: $row;
+    grid-column: $column;
+}
+
+@mixin gridalign($space){
+    grid-row: span $space;
+}
+
+@mixin grid2($fr1,$fr2,$fr3,$fr4){
+    grid-template-columns: $fr1 $fr2 $fr3 $fr4;
+}
+
+//fixed nav-bar
+@mixin position-nav($pos,$index){
+    position:$pos;
+    z-index: $index;
+}

@@ -1,0 +1,71 @@
+openapi: 3.1.0
+info:
+  title: Get favorite recipe
+  description: REST API to get favorite recipe.
+  version: 'v1.0'
+servers:
+ - url: http://localhost:8080
+paths:
+  /favoriteList:
+    get:
+      operationId: get-favorite-list
+      description: Get favortie list
+      parameters:
+        - name: userId
+          in: query
+          required: true
+          example: 1
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful get favorite list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FavoriteList"
+components:
+  schemas: 
+    FavoriteList:
+      type: object
+      properties:
+        statusCode:
+          type: string
+        statusMsg:
+          type: string
+        recipes:
+          type: array
+          items:
+            type: object
+            properties:
+              recipeId:
+                type: string
+              image:
+                type: string
+                format: byte
+                description: Base64 encoded image
+              title:
+                type: string
+              tags:
+                type: array
+                items:
+                  type: string
+              author:
+                type: string
+              ingredients:
+                type: array
+                items:
+                  type: string
+              description:
+                type: string
+      example:
+        statusCode: '200'
+        statusMsg: 'success'
+        recipes:
+          - recipeId: '1'
+            image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDA...'
+            title: Sumai
+            tags: ['pork', 'side', 'Chinese']
+            author: "JosieFu"
+            ingredients: ['dashi', 'garlic', 'cilantro']
+            description: "Prepare Filling / In a large bowl, combine ground pork, chopped shrimp, water chestnuts, soy sauce, oyster sauce, sesame oil, cornstarch, sugar, grated ginger, minced garlic, and chopped green onions. Mix well until all ingredients are evenly incorporated."
