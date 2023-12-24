@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sally Chang's Linktree Portfolio</title>
+    <link rel="shortcut icon" href="/assets/woman.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+</head>
+<body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+        <h2>Loading...</h2>
+    </div>
+
+    <div class="content">
+        <header>
+            <figure>
+                <img src="/assets/Sally.jpg" alt="Sally Chang">
+            </figure>
+            <h1>Chin-Chun (Sally) Chang</h1>
+            <h2>👧🏻 Graduate Student of Northeastern University</h2>
+        </header>
+        <main>
+            <a href="/assets/Sally-Resume.pdf" target="_blank">
+                <button>📚 Download Resume</button>
+            </a>
+            <a href="https://www.linkedin.com/in/chinchun-chang-94a38524a" target="_blank">
+                <button>🔗 LinkedIn</button>
+            </a>
+            <a href="mailto:chang.chinc@northeastern.edu">
+                <button>📩 Email</button>
+            </a>
+            <a href="https://github.com/SallyChanghw/Portfolio" target="_blank">
+                <button>👾 GitHub</button>
+            </a>
+        </main>
+        <footer>
+            <p>&copy Sally Chang 2023</p>
+        </footer>
+    </div>
+
+    <script>
+        // $(window).on("load",function(){
+        //     $(".loader-wrapper").fadeOut(2000);
+        // });
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut(2000, function() {
+                $(".content").css("display", "block").hide().fadeIn("slow");
+            });
+        });
+    </script>
+    
+</body>
+</html>
