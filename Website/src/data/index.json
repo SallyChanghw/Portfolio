@@ -1,0 +1,89 @@
+{
+    "skills":[
+        {
+            "id": 1,
+            "src": "./img/1.png",
+            "title": "Front-End",
+            "description": "HTML5 / CSS / SCSS / JavasScript / React.js"
+        },
+        {
+            "id": 2,
+            "src": "./img/2.png",
+            "title": "Back-End",
+            "description": "MySQL / MongoDB"
+        },
+        {
+            "id": 3,
+            "src": "./img/3.png",
+            "title": "UI & UX Design",
+            "description": "Figma / Axure RP / Adobe Illustrator / Canva"
+        },
+        {
+            "id": 4,
+            "src": "./img/4.png",
+            "title": "Others",
+            "description": "Programming: Java / Python / R \n Management: Jira / Amplitude"
+        }
+    ],
+    "portfolio":[
+        {
+            "id": 1,
+            "src": "./img/test-1.png",
+            "title": "Linktree",
+            "description": "1. Developed the frontend interface with HTML5, CSS and jQuery",
+            "link": "DEMO",
+            "url": "https://linktree-sallychang.netlify.app/"
+        },
+        {
+            "id": 2,
+            "src": "./img/test-2.png",
+            "title": "Cooking Mama Recipe Webiste",
+            "description": "1. Designed the UI with Figma\n 2. Developed the frontend interface with React and Redux / backend with MongoDB, Node.js and Express.js\n 3. Created REST APIs for retrieving and adding data to the database",
+            "link": "UI Design",
+            "url": "https://www.figma.com/file/s5CQYkD3rXsjn517WWv3gK/Web-Project--Recipe-Website?type=design&node-id=0-1&mode=design",
+            "link1":"DEMO Video",
+            "url1":"https://drive.google.com/file/d/15exsb_lWt4Sr3Hz-2SuAZSSJxAC3VgG9/view"
+        },
+        {
+            "id": 3,
+            "src": "./img/test-3.png",
+            "title": "Children Hospital System",
+            "description": "1. Utilized NetBeans to establish the framework\n 2. Developed the system with the Java programming language",
+            "link": "Introduction",
+            "url": "https://docs.google.com/presentation/d/1-iCBvSMm1GbA_DWkPEUkbZdDh64wyZY2mCzprCuNlkQ/edit?pli=1#slide=id.g2a07fb6a70c_0_6511"
+        }
+    ],
+    "experience":[
+        {
+            "id": 1,
+            "company": "Voicetube Corporation / Taipei, Taiwan",
+            "title": "Software Test Engineer and Product Management Intern",
+            "date": "Jan 2023 - Aug 2023",
+            "description": "1. Tested product functionalities on various platforms\n 2. Wrote test cases of the project to ensure the product met quality standards\n 3. Produced development documents such as multilingual string sheets and operation manuals\n 4. Worked closely with development and product teams to analyze requirements\n 5. Utilized tools such as Jira, Amplitude, and Excel to manage test cases and track defects"
+
+        },
+        {
+            "id": 2,
+            "company": "H2U Corporation / New Taipei City, Taiwan",
+            "title": "Project Management Intern",
+            "date": "Jun 2022 - Aug 2022",
+            "description": "1. Tested product functionalities on various platforms\n 2. Produced development documents such as operation manuals\n 3. Worked closely with the team in flow chart planning and wireframe drawing with Axure\n 4. Utilized Jira to manage test cases and track defects"
+        },
+        {
+            "id": 3,
+            "company": "Coding Ape / Taipei, Taiwan",
+            "title": "Teaching Assistant",
+            "date": "Jul 2020 - Feb 2021",
+            "description": "Coached 20+ elementary students to complete coding assignments of Scratch and Minecraft in summer and winter camps"
+        },
+        {
+            "id": 4,
+            "company": "National Chung Cheng University / Chiayi, Taiwan",
+            "title": "Teaching Assistant (Course:CCU Seminar)",
+            "date": "Sep 2019 - Feb 2020",
+            "description": "1. Managed a class of 40 students and made course arrangements to meet student needs\n 2. Led group discussions and answered any questions raised to improve performances\n 3. Bridged communication between instructor and students and boosted students’ learning motivation"
+        }
+        
+    ]
+
+}
